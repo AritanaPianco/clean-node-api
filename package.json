@@ -4,15 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "prepare": "husky"
   },
   "lint-staged": {
-     "*.js": ["standard"]
+    "*.js": [
+      "standard --fix"
+    ]
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "husky": "^9.1.7",
+    "jest": "^29.7.0",
     "lint-staged": "^15.2.10",
     "standard": "^17.1.2"
   }

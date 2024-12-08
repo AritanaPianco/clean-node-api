@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest --silent",
     "test:staged": "jest --passWithNoTests --findRelatedTests",
+    "test:ci": "jest --coverage",
     "prepare": "husky"
   },
   "standard": {
